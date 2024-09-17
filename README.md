@@ -9,8 +9,11 @@ Also,
 - Firewall bypass: If SSH connections are required from an enterprise internal network or behind a firewall, this browser-based client allows access without installing an external SSH client.
 - Protocol compatibility: A typical SSH client can be accessed using a web-based client even in a blocked environment.
 
-
 **SSL/TLS must be applied before deploying this browser-based SSH client in a production environment.**
+
+`host`, `port`, `user`, `passowrd` are required for SSH connection.
+
+`SSH key authentication` is not supported.
 
 ## Preview
 
