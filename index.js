@@ -4,10 +4,11 @@ const socketIo = require('socket.io');
 const { Client } = require('ssh2');
 
 const app = express();
-const server = http.createServer(app)
+const server = http.createServer(app);
 const io = socketIo(server);
 
-app.use(express.static(__dirname + '/public'))
+app.use('/', express.static(__dirname + '/public'));
+app.use('/xterm', express.static(__dirname + '/node_modules/xterm'));
 
 io.on('connection', (socket) => {
   let conn = null;
